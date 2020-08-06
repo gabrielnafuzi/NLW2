@@ -4,6 +4,17 @@
   border-radius: 0.8rem;
   margin-top: 2.4rem;
   overflow: hidden;
+  animation: show 1s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .teacher-item header {
@@ -56,12 +67,13 @@
   display: block;
 }
 
-.teacher-item footer button {
+.teacher-item footer a {
   width: 20rem;
   height: 5.6rem;
   background: var(--color-secondary);
   color: var(--color-button-text);
   border: 0;
+  text-decoration: none;
   border-radius: 0.8rem;
   cursor: pointer;
   font: 700 1.4rem Archivo;
@@ -71,7 +83,7 @@
   transition: 0.2s;
 }
 
-.teacher-item footer button:hover {
+.teacher-item footer a:hover {
   background: var(--color-secondary-dark);
 }
 
